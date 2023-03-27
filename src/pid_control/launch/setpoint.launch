@@ -1,0 +1,11 @@
+<launch>
+    <rosparam file = "$(find pid_control)/config/control_params.yaml" command = "load"/>
+    <rosparam file = "$(find pid_control)/config/system_params.yaml" command = "load"/>
+    <param name="set_point" value="17" />
+    
+    <node name="setpoint_generator" pkg="pid_control" type="set_point_generator.py" output="screen"/>
+    <node name="response_plot" pkg="rqt_plot" type="rqt_plot" args="/setpoint /motor_output/output /motor_input/input"/>
+    <node name="system" pkg="pid_control" type="system.py"            output="screen"/>
+    <node name="controller" pkg="pid_control" type="controller.py"  output="screen"/>
+    
+</launch>

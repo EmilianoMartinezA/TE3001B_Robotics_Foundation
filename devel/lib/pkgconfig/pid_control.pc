@@ -1,0 +1,8 @@
+prefix=/home/forthfive/catkin_ws/devel
+
+Name: pid_control
+Description: Description of pid_control
+Version: 0.0.0
+Cflags: -I/home/forthfive/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs

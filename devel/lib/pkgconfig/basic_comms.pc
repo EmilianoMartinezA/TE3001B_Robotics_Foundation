@@ -1,0 +1,8 @@
+prefix=/home/forthfive/catkin_ws/devel
+
+Name: basic_comms
+Description: Description of basic_comms
+Version: 0.0.0
+Cflags: -I/home/forthfive/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

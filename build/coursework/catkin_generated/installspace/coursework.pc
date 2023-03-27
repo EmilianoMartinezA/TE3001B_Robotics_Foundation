@@ -1,0 +1,8 @@
+prefix=/home/forthfive/catkin_ws/install
+
+Name: coursework
+Description: Description of coursework
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

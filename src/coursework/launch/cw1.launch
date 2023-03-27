@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+
+<!-- Write your launch file here--> 
+    <node name="process_node" pkg="coursework" type="process.py" output="screen" args="signal /signal_processed"/>
+    <node name="signal_generator_node" pkg="coursework" type="signal_generator.py" output="screen"/>
+    <node name="signal_generator_plot" pkg="rqt_plot" type="rqt_plot" args="/signal /signal_processed"/>
+    <node name="signal_generator_graph" pkg="rqt_graph" type="rqt_graph" args=""/>
+    <!-- rqt launch example-->
+    <!--  <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot" output="screen"  args="/signal /proc_signal"/> -->   
+</launch>
